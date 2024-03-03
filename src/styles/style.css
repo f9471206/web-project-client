@@ -1,0 +1,247 @@
+a {
+  text-decoration: none;
+}
+
+.navbar-theme-btn {
+  border-radius: 50px;
+}
+
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.themeBtn {
+  width: 45px;
+  height: 45px;
+  position: relative;
+}
+.themeBtn i {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.navbar-user {
+  display: flex;
+  width: 45px;
+  height: 45px;
+}
+.navbar-user::after {
+  display: none;
+}
+.navbar-user img {
+  width: 100%;
+  height: 100%;
+}
+.navbar-user i {
+  font-size: 45px;
+}
+
+.search-form {
+  min-width: 350px;
+}
+.search-form .search-box {
+  position: absolute;
+  top: 120%;
+  width: 100%;
+  padding: 0.25rem;
+  z-index: 10;
+  transition: all 0.5s ease;
+}
+.search-form .search-box .search_img img {
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  .navbar-theme-btn {
+    margin: 1rem 0;
+    width: 100%;
+    text-align: start;
+  }
+  .user-centent {
+    position: "";
+    right: auto;
+  }
+}
+.page-content {
+  min-height: 100vh;
+}
+
+.home-list {
+  cursor: default !important;
+}
+.home-list .user_img img,
+.home-list .placeholder-img {
+  width: 60px;
+  height: 60px;
+}
+
+@media screen and (max-width: 576px) {
+  .home-list .user_img img,
+  .home-list .placeholder-img {
+    width: 40px;
+    height: 40px;
+  }
+}
+.post_user_img img {
+  width: 70px;
+  height: 70px;
+}
+
+.like {
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.1s all ease;
+}
+.like:hover {
+  color: white;
+  background-color: rgba(14, 109, 253, 0.5);
+}
+
+@media screen and (max-width: 576px) {
+  .post_user_img img {
+    width: 50px;
+    height: 50px;
+  }
+}
+.register_Validate {
+  display: none;
+}
+
+input:invalid[focused=true] {
+  box-shadow: none;
+  border-color: red;
+}
+
+input:invalid[focused=true] ~ span {
+  display: block;
+}
+
+.updataImage {
+  border: 1px solid gray;
+  height: 400px;
+  border-radius: 0.375rem;
+  position: relative;
+  transition: opacity 0.2s ease;
+  display: flex;
+}
+.updataImage img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.updataImage i {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  font-size: 60px;
+}
+.updataImage .image_close {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  top: 8px;
+  right: 8px;
+  transition: all 0.2s ease-in;
+}
+.updataImage .image_close:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.user-bg-div {
+  height: 350px;
+}
+
+.user-background {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0;
+}
+
+.user-img-overlay {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%);
+  border-radius: 0;
+}
+.user-img-overlay .user-photo {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.user-img-overlay .user-conter {
+  text-align: start;
+}
+
+.profile-edit-photo {
+  width: 160px;
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0;
+}
+
+.profile-edit-bg {
+  cursor: pointer;
+  width: 100px;
+}
+.profile-edit-bg i {
+  font-size: 80px;
+}
+
+.uploadRow {
+  flex-wrap: nowrap;
+  transform: translateX(-100%);
+  transition: all 0.35s ease;
+}
+.uploadRow .uploadImg_pointer {
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.uploadRow .uploadImg_pointer:hover {
+  opacity: 0.8;
+}
+.uploadRow .uploadImgInput {
+  height: 200px;
+}
+.uploadRow .back_right {
+  cursor: pointer;
+  position: absolute;
+  padding: 0.5rem;
+  right: 20px;
+}
+.uploadRow .back_right i {
+  font-size: 25px;
+}
+.uploadRow .back_left {
+  cursor: pointer;
+  position: absolute;
+  padding: 0.5rem;
+  left: 20px;
+}
+.uploadRow .back_left i {
+  font-size: 25px;
+}
+
+.reply-border {
+  border: 1px dashed gray;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.reply-border:hover {
+  border-color: #0d6efd;
+  color: #0d6efd;
+}/*# sourceMappingURL=style.css.map */
