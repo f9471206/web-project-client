@@ -13,7 +13,7 @@ import ModalsPlaceholderComponents from "./modals/modals-placeholder-components"
 import MyFunction from "./modals/myFunction";
 import Badge from "react-bootstrap/Badge";
 
-const homeComponents = ({ data, setData }) => {
+const HomeComponents = ({ data, setData }) => {
   const { _tag } = useParams();
 
   const [refresh, setRefresh] = useState(false);
@@ -92,4 +92,4 @@ const homeComponents = ({ data, setData }) => {
   );
 };
 
-export default homeComponents;
+export default HomeComponents;
