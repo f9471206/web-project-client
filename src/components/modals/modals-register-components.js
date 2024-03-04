@@ -64,7 +64,6 @@ const ModalsRegisterComponents = (props) => {
 
     MemberService.register(Object.fromEntries(data.entries()))
       .then((d) => {
-        console.log(d);
         setRegisterSuc(true);
         setIsLoading(false);
         setErrMsg(false);

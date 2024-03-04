@@ -36,8 +36,6 @@ const HomeComponents = ({ data, setData }) => {
         setPlaceholder(false);
       });
   }, [_tag, location, refresh, data]);
-
-  console.log(data);
   return (
     <>
       {_tag && MyFunction.tagBadge(_tag).bg && (
