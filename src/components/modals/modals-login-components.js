@@ -82,7 +82,6 @@ const ModalsLoginComponents = (props) => {
           </FloatingLabel>
           <div className="d-grid gap-2 mb-1">
             {errMsg && <Alert variant="danger">{errMsg}</Alert>}
-            <span>忘記密碼?</span>
 
             {!isLoading && (
               <Button
