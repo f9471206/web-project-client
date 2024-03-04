@@ -37,9 +37,10 @@ const HomeComponents = ({ data, setData }) => {
       });
   }, [_tag, location, refresh, data]);
 
+  console.log(data);
   return (
     <>
-      {_tag && (
+      {_tag && MyFunction.tagBadge(_tag).bg && (
         <Container fluid className={`bg-${MyFunction.tagBadge(_tag).bg} p-3`}>
           <Row>
             <Col className="d-flex justify-content-center">

@@ -16,7 +16,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 import Logo from "../image/logo.svg";
 import Image from "react-bootstrap/Image";
 
-function OffcanvasExample() {
+function OffcanvasExample({ setData }) {
   const [darkMode, setDarkMode] = useState(
     localStorage.getItem("darkMode") === "true"
   );
@@ -99,7 +99,13 @@ function OffcanvasExample() {
           sticky="top"
         >
           <Container>
-            <Link to={"/"} className="navbar.Brand">
+            <Link
+              to={"/"}
+              onClick={() => {
+                setData(null);
+              }}
+              className="navbar.Brand"
+            >
               <Image src={Logo} />
             </Link>
 

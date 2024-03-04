@@ -6,6 +6,7 @@ import TweetComponents from "./components/tweet-components";
 import ProfileComponents from "./components/profile-components";
 import "./styles/style.css";
 import { useState } from "react";
+import NofoundPageComponents from "./components/nofoundpage-components";
 
 function App() {
   const [data, setData] = useState("");
@@ -13,13 +14,13 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/" element={<Layout setData={setData} />}>
           <Route
             path="/"
             element={<Home data={data} setData={setData} />}
           ></Route>
           <Route
-            path="/:_tag"
+            path="tag/:_tag"
             element={<Home data={data} setData={setData} />}
           ></Route>
           {/* 個別文章 */}
@@ -37,6 +38,7 @@ function App() {
             path="/user-profile/:_id/:_replys"
             element={<ProfileComponents />}
           ></Route>
+          <Route path="*" element={<NofoundPageComponents />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

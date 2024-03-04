@@ -18,25 +18,25 @@ function TagComponents({ setData }) {
     },
     {
       id: 2,
-      to: "/code",
+      to: "/tag/code",
       icon: "fa-solid fa-code",
       text: "程式",
     },
     {
       id: 3,
-      to: "/anime",
+      to: "/tag/anime",
       icon: "fa-regular fa-comments",
       text: "動漫",
     },
     {
       id: 4,
-      to: "/game",
+      to: "/tag/game",
       icon: "fa-solid fa-gamepad",
       text: "遊戲",
     },
     {
       id: 5,
-      to: "/feel",
+      to: "/tag/feel",
       icon: "fa-regular fa-comment",
       text: "心情",
     },
@@ -80,7 +80,7 @@ function TagComponents({ setData }) {
             <Link
               key={list.id}
               className="ms-2 mb-2"
-              to={parsed.sort ? `${list.to}?sort=${parsed.sort}` : list.to}
+              to={parsed.sort ? `${list.to}?sort=${parsed.sort}` : `${list.to}`}
               onClick={() => {
                 setData(null);
               }}
