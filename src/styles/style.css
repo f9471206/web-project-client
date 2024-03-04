@@ -36,6 +36,8 @@ a {
 .navbar-user img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .navbar-user i {
   font-size: 45px;
@@ -79,6 +81,8 @@ a {
 .home-list .placeholder-img {
   width: 60px;
   height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (max-width: 576px) {
@@ -91,6 +95,8 @@ a {
 .post_user_img img {
   width: 70px;
   height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .like {
