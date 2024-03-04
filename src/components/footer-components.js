@@ -12,10 +12,6 @@ function FooterComponents() {
           <span className="px-2 ">
             <i className="fa-regular fa-copyright"></i> 練習用
           </span>
-          |
-          <span className="px-2">
-            <i className="fa-brands fa-github"></i>
-          </span>
         </Col>
       </Row>
     </Container>
