@@ -1,7 +1,7 @@
 a {
   text-decoration: none;
 }
-@import "/navbar_style";
+@import "../components/Header/navbar_style";
 @import "../pages/Home/home_style";
 @import "../pages/CreateTweet/post_style";
 @import "./register_style";

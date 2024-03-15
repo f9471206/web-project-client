@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/esm/Button";
-import HomeService from "../services/home.service";
-import ModalsHomeArtcleListComponents from "./modals/modals-homeArtcleList-components";
+import HomeService from "../../services/home.service";
+import ModalsHomeArtcleListComponents from "../modals/modals-homeArtcleList-components";
 import Spinner from "react-bootstrap/Spinner";
 
 const HomeArticleComponents = ({ data, setData, _tag, sort }) => {

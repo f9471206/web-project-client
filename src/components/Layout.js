@@ -1,14 +1,14 @@
-import Nav from "./nav-components";
+import Header from "./Header/index.js";
 import { Outlet } from "react-router-dom";
-import FooterComponents from "./footer-components";
+import Footer from "./Footer/index.js";
 const Layout = ({ setData }) => {
   return (
     <>
-      <Nav setData={setData} />
+      <Header setData={setData} />
       <div className="page-content">
         <Outlet />
       </div>
-      <FooterComponents />
+      <Footer />
     </>
   );
 };

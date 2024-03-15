@@ -1,6 +1,6 @@
-import ModalsLoginComponents from "./modals/modals-login-components";
-import ModalsRegisterComponents from "./modals/modals-register-components";
-import ModalsLogoutComponents from "./modals/modals-logout-components";
+import ModalsLoginComponents from "../modals/modals-login-components";
+import ModalsRegisterComponents from "../modals/modals-register-components";
+import ModalsLogoutComponents from "../modals/modals-logout-components";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
@@ -9,14 +9,14 @@ import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import ModalsSearchComponents from "./modals/modals-search-components";
-import HomeService from "../services/home.service";
+import ModalsSearchComponents from "../modals/modals-search-components";
+import HomeService from "../../services/home.service";
 import Spinner from "react-bootstrap/Spinner";
 import Dropdown from "react-bootstrap/Dropdown";
-import Logo from "../image/logo.svg";
+import Logo from "../../image/logo.svg";
 import Image from "react-bootstrap/Image";
 
-function OffcanvasExample({ setData }) {
+export default ({ setData }) => {
   const [darkMode, setDarkMode] = useState(
     localStorage.getItem("darkMode") === "true"
   );
@@ -262,6 +262,4 @@ function OffcanvasExample({ setData }) {
       ))}
     </>
   );
-}
-
-export default OffcanvasExample;
+};

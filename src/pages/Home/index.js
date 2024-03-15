@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/esm/Button";
-import HomeArticleComponents from "../../components/home-article-components";
+import HomeArticleComponents from "../../components/HomeArticle";
 import SortComponents from "../../components/modals/sort-components";
 import TagComponents from "../../components/modals/tag-components";
 import { useLocation, useParams } from "react-router-dom";
