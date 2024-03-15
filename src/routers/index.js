@@ -16,7 +16,7 @@ export default (data, setData) => {
           path: "/post/:_id",
           element: <ViewTweet />,
         },
-        { path: "/tweet", element: <CreateTweet /> },
+        { path: "/tweet", element: <CreateTweet setData={setData} /> },
         { path: "/tweet-edit/:_id", element: <CreateTweet /> },
         { path: "/user-profile/:_id", element: <Profile /> },
         { path: "/user-profile/:_id/:_replys", element: <Profile /> },

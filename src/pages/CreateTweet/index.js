@@ -13,7 +13,7 @@ import HomeService from "../../services/home.service";
 import Spinner from "react-bootstrap/Spinner";
 import tweetService from "../../services/tweet.service";
 
-export default () => {
+export default ({ setData }) => {
   const [image, setImage] = useState(null);
 
   const handleSumbit = (e) => {
@@ -25,6 +25,7 @@ export default () => {
     if (!editData) {
       TweetService.postTweet(data)
         .then((d) => {
+          setData(null);
           setMsg("發表成功");
         })
         .catch((err) => {
