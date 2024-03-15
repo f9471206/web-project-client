@@ -3,17 +3,17 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/esm/Button";
-import HomeArticleComponents from "./home-article-components";
-import SortComponents from "./modals/sort-components";
-import TagComponents from "./modals/tag-components";
+import HomeArticleComponents from "../../components/home-article-components";
+import SortComponents from "../../components/modals/sort-components";
+import TagComponents from "../../components/modals/tag-components";
 import { useLocation, useParams } from "react-router-dom";
 import queryString from "query-string";
-import HomeService from "../services/home.service";
-import ModalsPlaceholderComponents from "./modals/modals-placeholder-components";
-import MyFunction from "./modals/myFunction";
+import HomeService from "../../services/home.service";
+import ModalsPlaceholderComponents from "../../components/modals/modals-placeholder-components";
+import MyFunction from "../../components/modals/myFunction";
 import Badge from "react-bootstrap/Badge";
 
-const HomeComponents = ({ data, setData }) => {
+export default ({ data, setData }) => {
   const { _tag } = useParams();
 
   const [refresh, setRefresh] = useState(false);
@@ -90,5 +90,3 @@ const HomeComponents = ({ data, setData }) => {
     </>
   );
 };
-
-export default HomeComponents;

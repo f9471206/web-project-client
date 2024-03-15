@@ -1,25 +1,24 @@
-import ModalsLoginComponents from "./modals/modals-login-components";
-import ModalsRegisterComponents from "./modals/modals-register-components";
+import ModalsLoginComponents from "../../components/modals/modals-login-components";
+import ModalsRegisterComponents from "../../components/modals/modals-register-components";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import HomeService from "../services/home.service";
+import HomeService from "../../services/home.service";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Badge from "react-bootstrap/Badge";
-import def from "../image/userdef.svg";
 import Placeholder from "react-bootstrap/Placeholder";
 import { Link } from "react-router-dom";
-import MyFunction from "./modals/myFunction";
-import ReplyTweetComponents from "./modals/reply-tweet-components";
-import ModalsShowDateComponents from "./modals/modals-showDate-components";
-import ModalsHomeArtcleListReplysCompoments from "./modals/modals-homeArtcleListReplys-compoments";
+import MyFunction from "../../components/modals/myFunction";
+import ReplyTweetComponents from "../../components/modals/reply-tweet-components";
+import ModalsShowDateComponents from "../../components/modals/modals-showDate-components";
+import ModalsHomeArtcleListReplysCompoments from "../../components/modals/modals-homeArtcleListReplys-compoments";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Popover from "react-bootstrap/Popover";
 import ListGroup from "react-bootstrap/ListGroup";
-import ModalsDeleteTweetComponents from "./modals/modals-delete-tweet-components";
-import TweetService from "../services/tweet.service";
+import ModalsDeleteTweetComponents from "../../components/modals/modals-delete-tweet-components";
+import TweetService from "../../services/tweet.service";
 import Spinner from "react-bootstrap/Spinner";
 
 const PostComponent = () => {

@@ -6,14 +6,14 @@ import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
-import TweetService from "../services/tweet.service";
-import ModalsLoading from "./modals/modals-loading";
-import ModalsUploadImage from "./modals/modals-uploadImage";
-import HomeService from "../services/home.service";
+import TweetService from "../../services/tweet.service";
+import ModalsLoading from "../../components/modals/modals-loading";
+import ModalsUploadImage from "../../components/modals/modals-uploadImage";
+import HomeService from "../../services/home.service";
 import Spinner from "react-bootstrap/Spinner";
-import tweetService from "../services/tweet.service";
+import tweetService from "../../services/tweet.service";
 
-export const TweetComponents = () => {
+export default () => {
   const [image, setImage] = useState(null);
 
   const handleSumbit = (e) => {
@@ -202,5 +202,3 @@ export const TweetComponents = () => {
     </>
   );
 };
-
-export default TweetComponents;

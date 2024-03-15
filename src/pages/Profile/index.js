@@ -5,14 +5,14 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/esm/Image";
 import Nav from "react-bootstrap/Nav";
-import MemberService from "../services/member.service";
+import MemberService from "../../services/member.service";
 import { useParams, Link } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
-import ProfileEditComponent from "./modals/modals-profile-edit-component";
-import ProfileBg from "./modals/modals-profile-bg";
+import ProfileEditComponent from "../../components/modals/modals-profile-edit-component";
+import ProfileBg from "../../components/modals/modals-profile-bg";
 import Spinner from "react-bootstrap/Spinner";
-import ModalsProfilecontentComponents from "./modals/modals-profilecontent-components";
+import ModalsProfilecontentComponents from "../../components/modals/modals-profilecontent-components";
 
 function ProfileComponents() {
   const { _id } = useParams();

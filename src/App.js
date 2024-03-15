@@ -1,48 +1,15 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./components/Layout";
-import Home from "./components/home-components";
-import PostComponent from "./components/post-component";
-import TweetComponents from "./components/tweet-components";
-import ProfileComponents from "./components/profile-components";
-import "./styles/style.css";
 import { useState } from "react";
-import NofoundPageComponents from "./components/nofoundpage-components";
+import { useRoutes } from "react-router-dom";
+import routers from "./routers";
+
+import "./styles/style.css";
 
 function App() {
   const [data, setData] = useState("");
 
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout setData={setData} />}>
-          <Route
-            path="/"
-            element={<Home data={data} setData={setData} />}
-          ></Route>
-          <Route
-            path="tag/:_tag"
-            element={<Home data={data} setData={setData} />}
-          ></Route>
-          {/* 個別文章 */}
-          <Route path="/post/:_id" element={<PostComponent />}></Route>
-          {/* 發表貼文 */}
-          <Route path="/tweet" element={<TweetComponents />}></Route>
-          {/* 編輯文章 */}
-          <Route path="/tweet-edit/:_id" element={<TweetComponents />}></Route>
-          {/* 個人資料 */}
-          <Route
-            path="/user-profile/:_id"
-            element={<ProfileComponents />}
-          ></Route>
-          <Route
-            path="/user-profile/:_id/:_replys"
-            element={<ProfileComponents />}
-          ></Route>
-          <Route path="*" element={<NofoundPageComponents />}></Route>
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  );
+  const element = useRoutes(routers(data, setData));
+
+  return <div>{element}</div>;
 }
 
 export default App;
